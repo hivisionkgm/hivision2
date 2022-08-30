@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HIvision</title>
+	{% load static %}
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/adminstylee.css' %}" type="text/css" media="all" />
+<style>
+div {
+  border: 1px solid gray;
+  padding: 8px;
+}
+
+div.c {
+  font-size: 150%;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+
+  text-transform: uppercase;
+  color:#ADFF2F;
+}
+
+p {
+  font-size: 150%;
+  text-align: center;
+  letter-spacing: 3px;
+  color:#ADFF2F;
+}
+
+    </style>
+</head>
+<body background="{% static 'images/bg1.jpg' %}" no-repeat;>
+<form method="POST">
+    {% csrf_token %}
+	<div class="c">
+<h1 style="color:red;">
+
+	HI-VISION (ADMIN PAGE)
+
+</h1></div>
+        <br>
+        <br><br><br>
+	<button class="btn btn-primary btn-block" type="submit">Logout</button>
+	<br><br><br>
+<div class="abc">
+	  <h1>
+		  <center>
+		Feedbacks
+		  </center>
+	</h1>
+	<br><br><br>
+{% for i in data %}
+	<h2>
+{{i.name}}
+	</h2><br>
+	<p >
+		{{i.message}}
+	</p><br>
+	<h2>
+		mail:{{i.email}}
+	</h2><br>
+	{% endfor %}
+</div>
+
+</form>
+</body>
+</html>

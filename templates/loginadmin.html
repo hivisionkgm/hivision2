@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Admin login form </title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+{% load static %}
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/adminstylee.css' %}" type="text/css" media="all" />
+
+</head>
+
+<body>
+    <div class="signinform">
+        <h1>Admin Login Form</h1>
+        <!-- container -->
+        <div class="container">
+            <!-- main content -->
+            <div class="w3l-form-info">
+                <div class="w3_info">
+                    <h2>Login</h2>
+
+                    <form action="#" method="post">
+                        {% csrf_token %}
+                        <div class="input-group">
+                            <span><i class="fas fa-user" aria-hidden="true"></i></span>
+                            <input type="email" placeholder="Username or Email" required="" name="mail">
+                        </div>
+                        <div class="input-group">
+                            <span><i class="fas fa-key" aria-hidden="true"></i></span>
+                            <input type="Password" placeholder="Password" required="" name="password">
+                        </div>
+
+                        <button class="btn btn-primary btn-block" type="submit">Login</button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- //main content -->
+        </div>
+        <!-- //container -->
+        <!-- footer -->
+        <div class="footer">
+            <p>© 2022 HI-Vision. All rights reserved | Design by MNZ</p>
+        </div>
+        <!-- footer -->
+    </div>
+
+    <!-- fontawesome v5-->
+    <script src="{% static 'js/adminfontawesome.js' %}"></script>
+
+</body>
+
+</html>

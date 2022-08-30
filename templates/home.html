@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HIvision</title>
+	{% load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Photo Maker Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="{% static 'css/style01.css' %}" type="text/css" media="all" />
+<!--// css -->
+<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css" media="all">
+<link href="{% static 'css/owl.theme.css' %}" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="{% static 'css/cm-overlay.css' %}" />
+<!-- tabs -->
+<link href="{% static 'css/easy-responsive-tabs.css' %}" rel='stylesheet' type='text/css'/>
+<!-- //tabs -->
+<!-- font-awesome icons -->
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="{% static 'css/font.css' %}" rel="stylesheet">
+<!-- //font -->
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script> 
+<script>
+$(document).ready(function() { 
+	$("#owl-demo").owlCarousel({
+ 
+		autoPlay: 3000, //Set AutoPlay to 3 seconds
+		autoPlay:true,
+		items : 3,
+		itemsDesktop : [640,5],
+		itemsDesktopSmall : [414,4]
+ 
+	});
+	
+}); 
+</script>
+<!--[if lt IE 9]>
+  <script src="{% static 'js/javanet.js' %}"></script>
+<![endif]-->
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner jarallax">
+		<div class="header">
+			<div class="container">
+				<div class="header-left">
+					<div class="w3layouts-logo">
+						<h1>
+							<a href="{% url 'home' %}">HI-VISION</a>
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="top-nav">
+						<nav class="navbar navbar-default">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a class="active" href="{% url 'home' %}">Home</a></li>
+									<li><a href="#about" class="scroll">About</a></li>
+									<li><a href="#services" class="scroll">Services</a></li>
+									<li><a href="#gallery" class="scroll">Gallery</a></li>
+									<li><a href="#team" class="scroll">Brands</a></li>
+									<li><a href="#contact" class="scroll">Contact</a></li>
+									<li><a href="{% url 'adminlogin' %}">Admin</a></li>
+
+								</ul>	
+								<div class="clearfix"> </div>
+							</div>	
+						</nav>		
+				</div>
+				<!-- w3-banner -->
+				<div class="w3-banner">
+					<div id="typer"></div>
+					<div class="top-banner-right">
+						<ul>
+
+							<li><a class="facebook" href="{% url 'home' %}"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+							<li><a class="facebook" href="mailto:hivisionkunnamangalam@gmail.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<div class="w3ls-phone">
+						<h2><i class="fa fa-phone" aria-hidden="true"></i>8089 717613</h2>
+					</div>
+				</div>
+				<!-- //w3-banner -->
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- about -->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="w3ls-heading">
+				<h3>About Us</h3>
+				<p>About Our Company</p>
+			</div>
+			<div class="agileits-about-grids">
+				<div class="col-md-6 agileits-about-grid">
+					<p>CCTV and surveillance encompasses a wide range of security products designed to protect property,
+						possessions and loved ones against theft and intruders. An acronym for Closed Circuit Television
+						, security CCTV in the modern day typically refers to all monitoring systems across various
+						technology types. Suitable for both domestic and commercial properties, a wide variety of products
+						are available to suit any installation requirements, with some models offering live view footage
+						or motion activated alerts. This is a great option for some home CCTV users who need to keep an
+						eye on a property when away from home.Our major Dealers are PICSYS , HIKVISION , DALHUA ,
+						CP PLUSE etc....  We provide 100% security at your home ,and you can watch your home or office
+						on your smartphone with smoothly </p>
+				</div>
+				<div class="col-md-6 agileits-about-grid">
+					<p>And we're not only providing cctv here we have Door Access Security system
+						,Home and Shop Security Alarm system , Automatic Gate system ,
+						Fingerprint and Attendance system etc... ,Also we have services of these all items. </p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="agileinfo-about-slide">
+				<div id="owl-demo" class="owl-carousel owl-theme">
+					<div class="item">
+						<div class="about-grid-info">
+							<img src="{% static 'images/pisys slide 1.jpg' %}" alt="" />
+							<div class="about-grid-caption"> 
+								<h4>PICSYS </h4>
+								<p>CCTV Cameras</p>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="about-grid-info">
+							<img src="{% static 'images/cp slide 11.jpg' %}" alt="" />
+							<div class="about-grid-caption"> 
+								<h4>CP Plus</h4>
+								<p>CCTV Cameras</p>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="about-grid-info">
+							<img src="{% static 'images/hik vision slide 1.jpg' %}" alt="" />
+							<div class="about-grid-caption"> 
+								<h4>HIK-VISION</h4>
+								<p>CCTV Cameras</p>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="about-grid-info">
+							<img src="{% static 'images/alhua slide 1.jpg' %}" alt="" />
+							<div class="about-grid-caption"> 
+								<h4>DALHUA</h4>
+								<p>CCTV Cameras</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="about-grid-info">
+							<img src="{% static 'images/hikvision slide 2.jpg' %}" alt="" />
+							<div class="about-grid-caption"> 
+								<h4>ATTENDANCE READER</h4>
+								<p>For collages and offices </p>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="about-grid-info">
+							<img src="{% static 'images/essl slide 1.jpg' %}" alt="" />
+							<div class="about-grid-caption">
+								<h4>ATTENDANCE READER</h4>
+								<p>For collages and offices</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="about-grid-info">
+							<img src="{% static 'images/alarm slide 1.jpg' %}" alt="" />
+							<div class="about-grid-caption">
+								<h4>ALARM SYSTEM</h4>
+								<p>For Home And Shops</p>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="about-grid-info">
+							<img src="{% static 'images/gate slide 1.jpg' %}" alt="" />
+							<div class="about-grid-caption"> 
+								<h4>AUTOMATIC GATE</h4>
+								<p>For Home And Shops</p>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="about-grid-info">
+							<img src="{% static 'images/Access door 1.jpg' %}" alt="" />
+							<div class="about-grid-caption">
+								<h4>ACCESS DOORS</h4>
+								<p>For Security Rooms</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+	<!-- middle-bottom -->
+	<div class="middle-bottom" id="services">
+		<div class="container">
+			<div class="w3ls-heading">
+				<h3>Services</h3>
+				<p>These Are Our Services</p>
+			</div>
+			<div class="middle-bottom-grids">
+				<div class="col-md-6 w3l-one">
+					<div class="one">
+						<h4><span>01</span>CCTV</h4>
+						<p>CCTV stands for closed-circuit television and is commonly known as video surveillance.
+							“Closed-circuit” means broadcasts are usually transmitted to a limited (closed) number of
+							monitors, unlike “regular” TV, which is broadcast to the public at large.In here we have
+							wired and wireless CCTV cameras Indian models and International models and also 360° to
+							bullet cameras are available.We can watch livestreaming with the help of Internet in our
+							smartphones.Some companies are PICSYS,HIKVISION,DALHUA,CP PLUES etc...</p>
+					</div>
+					<div class="one-2">
+						<h4><span>02</span>HOME & SHOP SECURITY ALARM SYSTEMS</h4>
+						<p>A security alarm is a system designed to detect intrusion, such as unauthorized entry, into
+							a building or other areas such as a home or Bank or school or Shopping complexes etc....
+							Security alarms used in residential, commercial, industrial, and military properties protect
+							against burglary (theft) or property damage, as well as personal protection against intruders</p>
+					</div>
+					<div class="one-3">
+						<h4><span>03</span>AUTOMATIC GATE</h4>
+						<p>Automatic gates consist of two basic components: Gate: The gate is the physical object that is moved to block the gate opening. Most gates used in commercial applications are made of either ornamental iron or chain-link material and are usually designed to match the fencing adjacent to where the gate is installed.</p>
+					</div>
+				</div>
+				<div class="col-md-6 w3-two">
+					<div class="two">
+						<h4><span>04</span>FINGERPRINT & ATTENDANCE SYSTEM</h4>
+						<p>A BiometricAttendance System uses biometric data such as fingerprints, eyes, hand geometry recognition, voice, vein recognition, face recognition, and so on to recognize a certain attribute of an individual. Many personal and commercial attendance systems are incorporating biometrics as an advanced layer</p>
+					</div>
+					<div class="two-1">
+						<h4><span>05</span>ACCESS DOORS SYSTEMS</h4>
+						<p>Access control system is a kind of electronic security technology through which we can control people visiting a particular place and keep the data of visitors. Through the Access System, we can allow only those people who have been given permission to enter.Here we have various types like sencer,button,fingerprint etc.... </p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- //middle-bottom -->
+	<!-- portfolio -->
+	<div class="portfolio" id="gallery">
+		<div class="container">
+			<div class="w3ls-heading">
+				<h3>Gallery</h3>
+				<p>Photo Gallery Of HI-VISION</p>
+			</div>
+			<div class="agileits_portfolio_grids">
+				<div class="col-md-3 agileits_portfolio_grid">
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/gall2.jpg' %}">
+							<img src="{% static 'images/gall2.jpg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/gall1.jpg' %}">
+							<img src="{% static 'images/gall1.jpg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/gall3.jpg' %}">
+							<img src="{% static 'images/gall3.jpg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 agileits_portfolio_grid">
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/gall8.jpg' %}">
+							<img src="{% static 'images/gall8.jpg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/gall6.jpg' %}">
+							<img src="{% static 'images/gall6.jpg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/galll5.jpg' %}">
+							<img src="{% static 'images/galll5.jpg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 agileits_portfolio_grid">
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/gall9.jpg' %}">
+							<img src="{% static 'images/gall9.jpg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/gall4.jpg' %}">
+							<img src="{% static 'images/gall4.jpg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/gall7.jpg' %}">
+							<img src="{% static 'images/gall7.jpg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-3 agileits_portfolio_grid">
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/gall10.jpeg' %}">
+							<img src="{% static 'images/gall10.jpeg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/gall11.jpeg' %}">
+							<img src="{% static 'images/gall11.jpeg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+					<div class="agileinfo_portfolio_grid hovereffect">
+						<a class="cm-overlay" href="{% static 'images/galll14.jpg' %}">
+							<img src="{% static 'images/galll14.jpg' %}" alt=" " class="img-responsive">
+							<div class="overlay">
+								<h4>HI-VISION</h4>
+								<p>Muriyanal , Kunnamangalam</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+				<script src="{% static 'js/jquery.tools.min.js' %}"></script>
+				<script src="{% static 'js/jquery.mobile.custom.min.js' %}"></script>
+				<script src="{% static 'js/jquery.cm-overlay.js' %}"></script>
+				<script>
+					$(document).ready(function(){
+						$('.cm-overlay').cmOverlay();
+					});
+				</script>
+		</div>
+	</div>
+	<!-- //portfolio -->
+	<!-- team -->
+	<div class="team" id="team">
+		<div class="container">
+			<div class="w3ls-heading team-heading">
+				<h3>Our Main Brands</h3>
+				<p>These Are Our Main Brands</p>
+			</div>
+			<div class="inner_w3l_agile_grids">
+				<div id="horizontalTab">
+						<ul class="resp-tabs-list">
+						<li>
+							<img src="{% static 'images/picsy1.jpg' %}" alt=" " class="img-responsive" />
+						</li>
+						<li>
+							<img src="{% static 'images/hikvision11.jpg' %}" alt=" " class="img-responsive" />
+						</li>
+						<li>
+							<img src="{% static 'images/cpplus11.jpg' %}" alt=" " class="img-responsive" />
+						</li>
+						<li>
+							<img src="{% static 'images/alhua1.jpg' %}" alt=" " class="img-responsive" />
+						</li>
+							<li>
+							<img src="{% static 'images/essl 1.jpg' %}" alt=" " class="img-responsive" />
+						</li>
+						</ul>
+						<div class="resp-tabs-container">
+							<div class="tab1">
+								<div class="col-md-6 team-img-w3-agile">
+								</div>
+								<div class="col-md-6 team-Info-agileits">
+									<h4>PICSYS</h4>
+									<span>CCTV</span>
+									<p>Picsys is committed to providing its highest quality solutions and products with the latest technologies to enable end-users to perform their business successfully. Picsys India, ISO certified leading CCTV manufacturer and service provider in India, we are proficient in bringing out a wide range of Wireless Ip Cameras, Dome Camera and Bullet Camera, Wi-Fi CCTV Cameras, PTZ Cameras, etc.it is one of the first and largest CCTV cameras manufacturer, and supplier in Bangalore, Karnataka. We have been an innovator in the Video Surveillance domain, developing and manufacturing a complete range of Video Surveillance products and solutions.</p>
+								<div class="w3_agileits_social_media team_agile_w3l">
+										<ul class="social-icons3">
+											<li class="agileinfo_share">Follow In</li>
+											<li><a href="https://www.facebook.com/www.picsys.in" class="wthree_facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="https://twitter.com/picsys1" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="https://www.picsys.in/" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>								
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							
+							<div class="tab2">
+							<div class="col-md-6 team-img-w3-agile">
+								</div>
+								<div class="col-md-6 team-Info-agileits">
+									<h4>HIKVISION</h4>
+									<span>CCTV , ALARM AND DOOR ACCESSES</span>
+									<p>Hikvision CCTV camera provides the most affordable quality products in India. Further, it is the most popular CCTV cameras brand, owing to its customer-specific products. Hikvision camera is a Chinese manufacturer that was established in the year 2001. Since then, Hikvision never saw back and moved ahead becoming the leading CCTV camera and security system manufacturers in the market.Hikvision bullet camera is built-in with a high-quality image sensor and provides crisp imaging even against strong backlight, owing to its WDR technology. Further, Hikvison cameras are compact and easy to install, make them perfect for keeping an eye on valuables.</p>
+								<div class="w3_agileits_social_media team_agile_w3l">
+										<ul class="social-icons3">
+											<li class="agileinfo_share">Follow In</li>
+											<li><a href="https://www.facebook.com/HikvisionHQ/" class="wthree_facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="https://twitter.com/hikvisionhq?lang=en" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="https://www.hikvision.com/en/" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+
+										</ul>
+									</div>									
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="tab3">
+								<div class="col-md-6 team-img-w3-agile">
+								</div>
+								<div class="col-md-6 team-Info-agileits">
+									<h4>CP Plus</h4>
+									<span>CCTV</span>
+									<p>CP PLUS brings intelligent security and surveillance solutions that protect people, properties and assets. They ensure safety, security and productivity in various industrial processes and help make the world safer. Our integrated security systems have been used in various situations and they deliver comprehensive coverage.CP PLUS offers a comprehensive range of advanced security and surveillance solutions to meet the ever-changing requirements of different industries. At present, we are serving many different verticals comprising defence, government, hotels, hospitals, educational institutes, homes, infrastructure, and transportation among others. Being a major surveillance system brand globally, we bring efficient, reliable, scalable, and integrated solutions to our customers.</p>
+							<div class="w3_agileits_social_media team_agile_w3l">
+										<ul class="social-icons3">
+											<li class="agileinfo_share">Follow In</li>
+											<li><a href="https://www.facebook.com/cpplusworld/" class="wthree_facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="https://twitter.com/cpplusglobal" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="https://www.cpplusworld.com/" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>								
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="tab4">
+							<div class="col-md-6 team-img-w3-agile">
+								</div>
+								<div class="col-md-6 team-Info-agileits">
+									<h4>DALHUA</h4>
+									<span>CCTV</span>
+									<p>Abiding by the philosophy of "Innovation for All", Dahua offers a wide portfolio of security-related products, ranging from IPC, NVR, HDCVI cameras, HCVR, PTZ cameras, thermal cameras, Access Control, Video Intercom, Alarms, Mobile & Traffic products, display & control, VMS and so on. Dahua products are based on an open platform that features easy integration with third party partners through a standard SDK.</p>
+									<div class="w3_agileits_social_media team_agile_w3l">
+										<ul class="social-icons3">
+											<li class="agileinfo_share">Follow In</li>
+											<li><a href="https://www.facebook.com/DahuatechnologyIndia/" class="wthree_facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="https://twitter.com/DahuaHQ?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="https://www.dahuasecurity.com/in" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>				
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+							<div class="tab5">
+							<div class="col-md-6 team-img-w3-agile">
+								</div>
+								<div class="col-md-6 team-Info-agileits">
+									<h4>ESSL</h4>
+									<span>CCTV , ALARM AND DOOR ACCESSES </span>
+									<p>eSSL is India’s Pioneer and Most trusted Biometrics brand since inception. eSSL was started in 2002 with a vision to make Biometrics as a integral part of everyday life for all of us. Biometrics provides more security and at the same time it is easy to use and maintain. Our mission is to install Biometrics device on every door, it can be organization where we work or home where we stay.</p>
+									<div class="w3_agileits_social_media team_agile_w3l">
+										<ul class="social-icons3">
+											<li class="agileinfo_share">Follow In</li>
+											<li><a href="https://www.facebook.com/EsslEnterpriseSoftwareSolutionsLab/" class="wthree_facebook"> <i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+											<li><a href="https://twitter.com/eSSLbangalore?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+											<li><a href="https://www.esslsecurity.com/" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //team -->
+	<!-- modal -->
+	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header"> 
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+					<h4 class="modal-title"><span>Photo</span> Maker</h4>
+				</div> 
+				<div class="modal-body">
+					<div class="agileits-w3layouts-info">
+						<img src="{% static 'images/7.jpg' %}" alt="" />
+						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //modal -->
+	<!-- contact -->
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="w3ls-heading">
+				<h3>Get In Touch</h3>
+				<p>You Can Text Your Valuable Feedback And Enquires</p>
+			</div>
+			<div class="contact-grids">
+				<div class="col-md-4 contact-left">
+					<div class="contact-info">
+						<div class="contact-info-left">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+						</div>
+						<div class="contact-info-right">
+							<h5>Address</h5>
+							<p>Muriyanal,Kunnamangalam<br>
+								<span>Kozhikode,</span>
+								Kerala,673571
+							</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="contact-info">
+						<div class="contact-info-left">
+							<i class="fa fa-phone-square" aria-hidden="true"></i>
+						</div>
+						<div class="contact-info-right">
+							<h5>Mobile</h5>
+							<ul>
+								<li>+91 8089 717613</li>
+								<li>+91 7902 917613</li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="contact-info">
+						<div class="contact-info-left">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<div class="contact-info-right">
+							<h5>E-Mail</h5>
+							<ul>
+								<li><a href="mailto:hivisionkunnamangalam@gmail.com">hivisionkgm@gmail.com</a></li>
+							</ul>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+				<script>
+function msg(){
+alert("MESSAGE SENT SUCSESSFULLY,THANKS FOR YOUR VALUABLE MESSAGES ");
+}
+</script>
+				<div class="col-md-8 contact-form">
+					<form action="#" method="post">
+					{% csrf_token %}
+						<input type="text" name="name" placeholder="Name" required="">
+						<input type="email" class="email" name="email" placeholder="Email" required="">
+						<textarea placeholder="Message" name="message" required=""></textarea>
+						<input type="submit" value="SUBMIT"  onclick="msg()" />
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //contact -->
+	<div class="footer">
+		<div class="container">
+			<div class="social">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-rss"></i></a></li>
+					<li><a href="#"><i class="fa fa-vk"></i></a></li>
+				</ul>
+			</div>
+			<div class="border"></div>
+			<div class="agileits-w3layouts-copyright">
+				<p>© 2022 HI-Vision. All rights reserved | Design by MNZ</p>
+			</div>
+		</div>
+	</div>
+	<script src="{% static 'js/responsiveslides.min.js' %}"></script>
+	<script src="{% static 'js/SmoothScroll.min.js' %}"></script>
+	<script src="{% static 'js/jarallax.js' %}"></script>
+	<script type="text/javascript">
+				/* init Jarallax */
+				$('.jarallax').jarallax({
+					speed: 0.5,
+					imgWidth: 1366,
+					imgHeight: 768
+				})
+			</script>
+
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<script src="{% static 'js/jquery.typer.js' %}"></script>
+	<script>
+						var win = $(window),
+							foo = $('#typer');
+
+						foo.typer(['HI-VISION', 'SECURITY SYSYTEMS', 'KUNNAMANGALAM']);
+
+						// unneeded...
+						win.resize(function(){
+							var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+
+							foo.css({
+								fontSize: fontSize * .8 + 'px'
+							});
+						}).resize();
+					</script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+	<!-- //here ends scrolling icon -->
+	<script src="{% static 'js/owl.carousel.js' %}"></script>
+	<!--tabs-->
+	<script src="{% static 'js/easy-responsive-tabs.js' %}"></script>
+	<script>
+	$(document).ready(function () {
+	$('#horizontalTab').easyResponsiveTabs({
+	type: 'default', //Types: default, vertical, accordion           
+	width: 'auto', //auto or any width like 600px
+	fit: true,   // 100% fit in a container
+	closed: 'accordion', // Start closed if in accordion view
+	activate: function(event) { // Callback function if tab is switched
+	var $tab = $(this);
+	var $info = $('#tabInfo');
+	var $name = $('span', $info);
+	$name.text($tab.text());
+	$info.show();
+	}
+	});
+	$('#verticalTab').easyResponsiveTabs({
+	type: 'vertical',
+	width: 'auto',
+	fit: true
+	});
+	});
+	</script>
+	<!--//tabs-->
+
+</body>	
+</html>
